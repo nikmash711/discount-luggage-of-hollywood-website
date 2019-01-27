@@ -1,0 +1,473 @@
+body{
+/*background: url("discount.png");
+background-size:cover;
+background-position: center;
+background-attachment: fixed;*/
+padding-top: 70px;
+text-align: center;
+height: 100%;
+}
+
+.backgroundfix{
+  position: fixed;
+  float: left;
+  left:0;
+  top:0;
+  z-index: -5;
+  height:100%;
+  width:100%;
+}
+
+
+html{
+height:100%;
+}
+
+.navbar-brand{
+position: absolute;
+transform: translateX(-50%);
+left: 50%;
+text-align: center;
+font-family: Mina;
+color: rgb(242,242,222);
+}
+
+.navbar-toggle {
+z-index:3;
+background-color: rgb(242, 242, 222);
+transition: background-color .5s;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: rgb(68, 2, 2);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+background-color:rgb(242, 242, 222);
+}
+
+.navbar{
+background-color: rgb(38, 1, 1);
+border:none;
+}
+
+.navbar-default .navbar-nav>li>a{
+transition: background-color .3s;
+color: rgb(242, 242, 222);
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+background-color: rgb(242, 242, 222);
+color:black;
+}
+
+.navbar-nav .open .dropdown-menu{
+background-color: rgb(27, 2, 2);
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+color:white;
+}
+
+.navbar-default .navbar-brand{
+transition: color .5s;
+color: rgb(242,242,222);
+}
+
+.dropdown-menu>li>a{
+transition: background-color .3s;
+color:rgb(242, 242, 222);
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+background-color: rgb(242, 242, 222);
+
+} /*this is for when the screen is big*/
+
+@media (max-width: 767px){
+
+.navbar-nav .open .dropdown-menu{
+  background-color: rgb(27, 2, 2);
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+  color: rgb(242, 242, 222);
+  text-align: center;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:active{
+  background-color: rgb(242, 242, 222);
+  color:black;
+  }
+
+} /*when the screen is smaller than 767px*/
+
+@media(max-width: 576px){
+.navbar-brand{
+transform: translateX(0);
+left:0;
+right: 0;
+text-align: right;
+left:10%;
+}
+}/*when the screen is smaller than 576, move brand to the right*/
+
+@media (max-width: 321px){
+.navbar-brand{
+font-size: 15px;
+}
+} /*when the screen is 321px or less, change size of logo*/
+
+.jumbotron{
+text-align: center;
+color:white;
+background-color:rgba(1, 1, 1, .8);
+margin-bottom: 50px;
+padding:5px;
+}
+
+.row{
+text-align: center;
+}
+
+
+.reviews{
+background-color: rgba(1,1,1,.8);
+border-radius: 100px;
+margin-bottom: 20px;
+width:100%;
+}
+
+@media(min-width: 992px){
+  .reviews{
+  width: 70%;
+  margin-left: 15%;
+  }
+}
+
+.reviews h1{
+color:rgb(242,242,222);
+text-shadow: 4px 4px rgb(37,2,2);
+font-family: Roboto Slab;
+font-weight: 700;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+.reviews>div>iframe{
+padding-left: 5%;
+padding-right:5%;
+margin: auto; /* to center the reviews when screen is big*/
+margin-bottom: 5%;
+display: block; 
+border: 0px;
+}    
+
+@media(max-width: 400px){
+  .reviews>div>iframe{
+  padding-left:0;
+  padding-right: 0;
+  }
+}
+
+@media(max-width: 350px){
+  .reviews>div>iframe{
+  display:none;
+  }
+}
+
+@media(min-width:351px){
+  .yelp img{
+    display:none;
+  }
+}
+
+/*@media(max-width:321px){
+  .reviews>div>iframe{
+    margin:0;
+    margin-bottom: 5%;
+  }
+}*/
+
+#googlemap{
+/*allowfullscreen: true;*/
+height: 400px;
+width:95%;
+margin-bottom: 5px;
+/*margin-top: 5%;*/
+}
+
+p{
+padding-left: 5px;
+padding-right: 5px;
+font-family: Roboto Slab;
+font-weight: 400;
+}
+
+.anchor{
+display: block;
+height: 130px; /*same height as header*/
+margin-top: -130px; /*same height as header*/
+visibility: hidden;
+} /*so when we click it, it goes to the right place*/
+
+.reviews .anchor{
+height: 220px;
+margin-top: -220px;
+}   
+
+.boxes{
+background-color:rgba(242, 242, 222,.8);
+border-radius: 10px;
+}
+
+/*p{
+font-weight: bold;
+}
+*/
+.footer, .push{
+height:30px;
+}
+
+.footer{
+  background-color: rgb(37, 2, 2);
+}
+
+footer p{
+color:rgb(242,242,222);
+margin-bottom: 0;
+font-weight: normal;
+padding-top: 6px;
+font-size: 12px;
+font-family: Mina;
+}
+
+footer a{
+color: rgb(242,242,222);
+text-decoration: none;
+}
+
+footer a:hover{
+text-decoration: none;
+color:white;
+}
+
+#discountfooter{
+font-size: 14px;
+}
+
+@media(max-width: 767px){
+.footer{
+height:80px;
+}
+
+#wrapper{
+  margin-bottom: -80px;
+}
+
+}
+
+@media(max-width: 321px){
+
+footer p {
+font-size: 10px;
+}
+}
+
+hr.style1{
+overflow: visible; /* For IE */
+height: 30px;
+border-style: solid;
+border-color: rgb(242,242,222);
+border-width: 4px 0 0 0;
+border-radius: 20px;
+}
+hr.style1:before { /* Not really supposed to work, but does */
+display: block;
+content: "";
+height: 30px;
+margin-top: -31px;
+border-style: solid;
+border-color: rgb(242,242,222);
+border-width: 0 0 4px 0;
+border-radius: 20px;
+}
+
+.btn-danger, .btn-primary{
+margin-bottom: 40px;
+font-family: Arvo;
+font-weight: 400;
+color: rgb(242,242,222);
+}
+
+.last{
+margin-top: 0;
+margin-bottom: 50px;
+}
+
+
+@media(min-width:992px){
+  .fixthis.col-md-6{
+    float:none;
+  }
+}
+
+.fixthis{
+  background-color: rgba(242,242,222,.8);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.form-group{
+  text-align: left;
+}
+
+form label{
+  font-family: Roboto Slab;
+}
+
+.submitbtn{
+  width:50%;
+  margin: auto;
+  text-align: center;
+}
+
+@media(min-width: 768px){
+  .form-horizontal .control-label{
+    text-align: left;
+  }
+}
+
+@media(max-width: 500px){
+.form-horizontal .control-label{
+  font-size: 10px;
+}
+}
+
+@media(max-width: 321px){
+.form-horizontal .control-label{
+  font-size: 8px;
+}
+}
+
+.form{
+  margin-bottom: 0;
+}
+
+#wrapper{
+  min-height: 100%;
+  margin-bottom: -30px;
+} /*deals with footer*/
+
+a.phone{
+  color:rgb(242,242,222);
+  text-decoration: underline;
+}
+
+a.phone:hover{
+  color:white;
+}
+
+.navbar-brand, ul a {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+    font-family: Mina;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h3{
+  font-family: Roboto Slab;
+  font-weight: 700;
+  text-align: center;
+}
+
+.jumbotron h1{
+  font-family: Mina;
+  font-weight: 700;
+  color:rgb(242,242,222);
+  text-shadow: 5px 5px rgb(37,2,2);
+}
+
+.jumbotron p{
+  font-family: Mina;
+  font-size: 18px;
+  color:rgb(242,242,222);
+}
+
+.dropdown-menu{
+  border:none;
+  background-color: rgb(37,2,2);
+}
+
+.container .jumbotron, .container-fluid .jumbotron{
+  border-radius: 10px;
+}
+
+.btn-default{
+  font-family: Roboto Slab;
+  font-size:18px;
+}
+
+.yelp img{
+  width:100%;
+  margin-bottom: 15px;
+}
+
+.products1, .products2 {
+  text-align: left;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+@media(min-width: 451px){
+  .products2{
+    display: none;
+  }
+}
+
+@media(max-width: 450px){
+  .products2{
+    text-align: center;
+    display:block;
+  }
+
+  .products1{
+    display: none;
+  }
+}
+
+.desc{
+  text-align: center;
+}
