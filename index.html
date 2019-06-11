@@ -1,320 +1,491 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115438557-1"></script>
-      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-115438557-1"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-115438557-1');
+      gtag('config', 'UA-115438557-1');
 
-         window.sr = ScrollReveal({ reset: true });
-      </script>
-      <title>Discount Luggage of Hollywood</title>
-      <link rel="icon" href="./img/suitcase.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Discount Luggage of Hollywood is the one stop shop for all your various luggage needs! You're guaranteed to find what you're looking for, at the price you're looking for!">
-      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Arvo:700,400|Mina:400,700|Rammetto+One|Roboto+Slab:400,700" rel="stylesheet">
-      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
-      <script src="https://code.jquery.com/jquery-2.1.4.js"></script> <!-- we need jquery because JS uses it -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-       <link rel="stylesheet" type="text/css" href="discountstyle.css">
-   </head>
-   <body>
-    <img src="./img/discount.png" alt = "store" class ="backgroundfix">
-    <div id = "wrapper"> 
+      window.sr = ScrollReveal({ reset: true });
+    </script>
+    <title>Discount Luggage of Hollywood</title>
+    <link rel="icon" href="./img/suitcase.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discount Luggage of Hollywood is the one stop shop for all your various luggage needs! You're guaranteed to find what you're looking for, at the price you're looking for!"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo:700,400|Mina:400,700|Rammetto+One|Roboto+Slab:400,700"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <!-- we need jquery because JS uses it -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="discountstyle.css" />
+  </head>
+  <body>
+    <img src="./img/discount.png" alt="store" class="backgroundfix" />
+    <div id="wrapper">
       <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-            <!-- this will center whats in the navbar -->
-            <div class="navbar-header">
-               <!-- this is where you can put the brand -->
-               <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-                  <!-- this is the hamburger loooking thing that shows up when we collapse our navbar. the attribute data-target is whats important here - it has to much the id - i put it on the left-->
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
+        <div class="container">
+          <!-- this will center whats in the navbar -->
+          <div class="navbar-header">
+            <!-- this is where you can put the brand -->
+            <button
+              type="button"
+              class="pull-left navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-nav-demo"
+              aria-expanded="false"
+            >
+              <!-- this is the hamburger loooking thing that shows up when we collapse our navbar. the attribute data-target is whats important here - it has to much the id - i put it on the left-->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-               <a href="#about" class="navbar-brand">Discount Luggage of Hollywood</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-nav-demo">
-               <!-- whatever is in here is what disappears when we get to a certain size -->
-               <ul class="nav navbar-nav">
-                  <!-- this is the main content of the nav -->
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-suitcase"></i> About <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li class = "diff"><a href="#storehours"> <i class="far fa-clock"></i> Store Hours</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class = "diff"><a href="#location"><i class="fas fa-map-marker-alt"></i> Location & Directions</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class = "diff"><a href="#parking"><i class="fas fa-car"></i> Parking</a></li>                        
-                     </ul>
+            <a href="#about" class="navbar-brand"
+              >Discount Luggage of Hollywood</a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <!-- whatever is in here is what disappears when we get to a certain size -->
+            <ul class="nav navbar-nav">
+              <!-- this is the main content of the nav -->
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><i class="fas fa-suitcase"></i> About
+                  <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li class="diff">
+                    <a href="#storehours">
+                      <i class="far fa-clock"></i> Store Hours</a
+                    >
                   </li>
-                  <li><a href="#reviews"><i class="fas fa-edit"></i> Reviews</a></li>
-               </ul>
-               <ul class="nav navbar-nav navbar-right">
-                  <li class = "diff"><a href="tel:323-465-7827"> <i class="fas fa-phone-volume"></i> Call</a></li>
-                  <li class = "diff"><a href="mailto:discountluggage123@gmail.com"><i class="far fa-envelope"></i> Email</a></li>                   
-               </ul>
-            </div>
-         </div>
+                  <li role="separator" class="divider"></li>
+                  <li class="diff">
+                    <a href="#location"
+                      ><i class="fas fa-map-marker-alt"></i> Location &
+                      Directions</a
+                    >
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li class="diff">
+                    <a href="#parking"><i class="fas fa-car"></i> Parking</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#reviews"><i class="fas fa-edit"></i> Reviews</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="diff">
+                <a href="tel:323-465-7827">
+                  <i class="fas fa-phone-volume"></i> Call</a
+                >
+              </li>
+              <li class="diff">
+                <a href="mailto:discountluggage123@gmail.com"
+                  ><i class="far fa-envelope"></i> Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
-      <div class = "container">
-        <span class="anchor" id = "about"></span>
-        <div class = "jumbotron">
+      <div class="container">
+        <span class="anchor" id="about"></span>
+        <div class="jumbotron">
           <h1>Welcome to Discount Luggage of Hollywood</h1>
-          <p> The one stop shop for all your various luggage needs! You're guaranteed to find what you're looking for, <strong> at the price you're looking for.</strong> A large variety of luggage, including Samsonite and Jansport, all at a <strong>discounted price!</strong> <br> Not sure what you need? <a href="tel:323-465-7827" class = "phone"> <strong>Feel free to call and ask!</strong></a></p>
+          <p>
+            The one stop shop for all your various luggage needs! You're
+            guaranteed to find what you're looking for,
+            <strong> at the price you're looking for.</strong> A large variety
+            of luggage, including Samsonite and Jansport, all at a
+            <strong>discounted price!</strong> <br />
+            Not sure what you need?
+            <a href="tel:323-465-7827" class="phone">
+              <strong>Feel free to call and ask!</strong></a
+            >
+          </p>
         </div>
-        <hr class = "style1">
+        <hr class="style1" />
         <span class="anchor" id="products"></span>
-        <div class = "row thumbnail boxes products1">
+        <div class="row thumbnail boxes products1">
           <h3><i class="fas fa-briefcase"></i> Products:</h3>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Backpacks </p> 
-          </div>   
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Soft Sided Suitcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Hard Shell Suitcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Duffle Bags </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Wheeled Duffle Bags </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Backpacks</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Spinner Suitcases </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Briefcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Laptop Briefcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Pet Carriers </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Soft Sided Suitcases</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Makeup Cases </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> Fanny Packs </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Hard Shell Suitcases</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-6">
-          <p><i class="fas fa-suitcase"></i> AND MORE! </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Duffle Bags</p>
           </div>
-          <div class = "col-xs-12">
-          <p class = "desc"> <strong>Many of these products come in a variety of sizes, colors, and prices!</strong> </p> 
-          </div>  
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Wheeled Duffle Bags</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Spinner Suitcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Briefcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Laptop Briefcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Pet Carriers</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Makeup Cases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> Fanny Packs</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-6">
+            <p><i class="fas fa-suitcase"></i> AND MORE!</p>
+          </div>
+          <div class="col-xs-12">
+            <p class="desc">
+              <strong
+                >Many of these products come in a variety of sizes, colors, and
+                prices!</strong
+              >
+            </p>
+          </div>
         </div>
 
-        <div class = "row thumbnail boxes products2">
+        <div class="row thumbnail boxes products2">
           <h3><i class="fas fa-briefcase"></i> Products:</h3>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Backpacks </p> 
-          </div>   
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Soft Sided Suitcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Hard Shell Suitcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Duffle Bags </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Wheeled Duffle Bags </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Backpacks</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Spinner Suitcases </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Briefcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Laptop Briefcases </p> 
-          </div> 
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Pet Carriers </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Soft Sided Suitcases</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Makeup Cases </p> 
-          </div>  
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> Fanny Packs </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Hard Shell Suitcases</p>
           </div>
-          <div class = "changethis col-md-3 col-sm-4 col-xs-12">
-          <p><i class="fas fa-suitcase"></i> AND MORE! </p> 
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Duffle Bags</p>
           </div>
-          <div class = "col-xs-12">
-          <p class = "desc"> <strong>Many of these products come in a variety of sizes, colors, and prices!</strong> </p> 
-          </div>  
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Wheeled Duffle Bags</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Spinner Suitcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Briefcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Laptop Briefcases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Pet Carriers</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Makeup Cases</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> Fanny Packs</p>
+          </div>
+          <div class="changethis col-md-3 col-sm-4 col-xs-12">
+            <p><i class="fas fa-suitcase"></i> AND MORE!</p>
+          </div>
+          <div class="col-xs-12">
+            <p class="desc">
+              <strong
+                >Many of these products come in a variety of sizes, colors, and
+                prices!</strong
+              >
+            </p>
+          </div>
         </div>
-        <div class = "row">
-            <div class="col-sm-6 col-xs-12"> 
-              <div class = "row">
-                <div class = "col-lg-6" >
-                  <div class = "thumbnail boxes">
-                    <span class="anchor" id="storehours"></span>
-                    <h3><i class="far fa-clock"></i> Store Hours:</h3>
-                    <p> 
-                      <strong>Monday:</strong> 10:00am - 7:00pm <br> <strong>Tuesday</strong> 10:00am - 7:00pm <br> <strong>Wednesday:</strong> 10:00am - 7:00pm <br> <strong>Thursday: </strong> 10:00am - 7:00pm <br> 
-                      <strong>Friday:</strong> 10:00am - 7:00pm <br> <strong>Saturday:</strong> 10:00 - 7:00pm <br> <strong>Sunday</strong> 11:00am - 6:00pm <br> </p>
-                    <p>Hours can be flexible; if you need to stop by before or after regular business hours, it can be managed. <br>  <a href="tel:323-465-7827"> Please call ahead to confirm! </a></p>
-                  </div>
-                 </div> 
-                <div class = "col-lg-6">
-                  <div class = "thumbnail boxes">
-                    <span class="anchor" id="parking"></span>                    
-                    <h3> <i class="fas fa-car"></i> Parking:</h3>
-                    <p> Meter parking is available in front of the store, as well as on Cherokee Ave south of Hollywood Blvd. Always double check the signs before parking! <br><br> <i class="fas fa-dollar-sign"></i> <a href="https://www.yelp.com/search?cflt=parking&find_loc=Hollywood%2C+Los+Angeles%2C+CA" target = "_blank"> Nearby parking structures are also available </a><i class="fas fa-dollar-sign"></i> </p>
-                  </div>                  
-                </div>  
-                </div> 
-              </div> 
-            
-            <div class="col-sm-6 col-xs-12"> 
-              <div class = "thumbnail boxes"> 
-                <span class="anchor" id="location"></span>
-                <h3> <i class="fas fa-map-marker-alt"></i> Location:</h3> 
-                <p> Conveniently located in the heart of Hollywood Blvd, between Cherokee Ave and Schrader Blvd<br> <br> <a href="https://www.google.com/maps?ll=34.101396,-118.33445&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=9841494984010756839">#C, 6630 Hollywood Blvd, Los Angeles, CA 90028</a></p>
-                <p>Click on the map below for directions!</p>
-                <iframe id = "googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7557967718085!2d-118.33664444952657!3d34.101395880497314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf3b55213763%3A0x8894038ba4bff2e7!2sDiscount+Luggage+of+Hollywood!5e0!3m2!1sen!2sus!4v1503540215421"  ></iframe>
-              </div> 
-            </div>
-        </div>
-
-        <hr class ="style1">
-        <div class = "reviews">
-              <h1>Yelp Reviews</h1>
-              <span class="anchor" id="reviews"></span>
-          <div class = "yelp">
-                 <iframe data-review-id="_pUeizGHiFl0vAyiqEJf4g" class="yelp-review" src="https://www.yelp.com/embed/review/_pUeizGHiFl0vAyiqEJf4g?embed_location=" scrolling="no" style="max-width: 700px; min-width: 320px; width: 100%; height: 240px; border: 0px;"></iframe>
-                 <a href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles" target="_blank"><img src="./img/josh.png" alt = "Josh's Review"></a>
-          </div>   
-
-          <div class = "yelp">
-            <iframe data-review-id="tLP60KSvAO6YBKUSg03HSg" class="yelp-review" src="https://www.yelp.com/embed/review/tLP60KSvAO6YBKUSg03HSg?embed_location=" scrolling="no" style="max-width: 700px; min-width: 320px; width: 100%; height: 260px; border: 0px;"></iframe>
-            <a href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles" target="_blank"><img src="./img/tiffany.png" alt = "Tiffany's Review"></a>
-          </div>
-
-          <div class = "yelp">
-            <iframe data-review-id="NMzeCVT-tXS7OnyRER0gmA" class="yelp-review" src="https://www.yelp.com/embed/review/NMzeCVT-tXS7OnyRER0gmA?embed_location=" scrolling="no" style="max-width: 700px; min-width: 320px; width: 100%; height: 339px; border: 0px;"></iframe>
-            <a href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles" target="_blank"><img src="./img/elise.png" alt = "Elise's Review"></a>
-          </div>
-
-          <a class="btn btn-danger btn-lg" href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles" target="_blank"> See More Yelp Reviews Here!</a> <br>
-          
-
-          <a id = "googlebtn" class="btn btn-primary btn-lg last" href="https://www.google.com/search?ei=A_udWvTzKcLqjwSEoI_gCQ&q=discount+luggage+of+hollywood&oq=discount+luggage+of+hollywood&gs_l=psy-ab.3..0i71k1l8.0.0.0.12726.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.a8LxUrYCh-Q#lrd=0x80c2bf3b55213763:0x8894038ba4bff2e7,1,,," target="_blank">And Google Reviews Here!</a>
-        </div>
-      </div>
-      <div class="push"></div>
-  </div>
-        <footer class = "footer">  
-          <div class = "container">
-            <div class = "row">
-              <div class = "col-sm-4 col-sm-push-4 col-xs-12">
-                <p><a id = "discountfooter" href="#about">Discount Luggage of Hollywood</a></p>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumbnail boxes">
+                  <span class="anchor" id="storehours"></span>
+                  <h3><i class="far fa-clock"></i> Store Hours:</h3>
+                  <p>
+                    <strong>Monday:</strong> 10:00am - 7:00pm <br />
+                    <strong>Tuesday, June 11</strong> 12:00pm - 7:00pm <br />
+                    <strong>Wednesday:</strong> 10:00am - 7:00pm <br />
+                    <strong>Thursday: </strong> 10:00am - 7:00pm <br />
+                    <strong>Friday:</strong> 10:00am - 7:00pm <br />
+                    <strong>Saturday:</strong> 10:00 - 7:00pm <br />
+                    <strong>Sunday, June 16</strong> CLOSED <br />
+                  </p>
+                  <p>
+                    Hours can be flexible; if you need to stop by before or
+                    after regular business hours, it can be managed. <br />
+                    <a href="tel:323-465-7827">
+                      Please call ahead to confirm!
+                    </a>
+                  </p>
+                </div>
               </div>
-              <div class = "col-sm-4 col-sm-pull-4 col-xs-6">
-                <p > Website by NikMash Creations<!-- <a id ="nikmash" href="#">NikMash</a> --></p>
-              </div>
-              <div class = "col-sm-4 col-xs-6">
-                <div class = "row">
-                  <div class = "col-sm-7 col-xs-12">
-                    <p><a href="tel:323-465-7827"> <i class="fas fa-phone"></i> Call</a></p>
-                  </div>
-                  <div class = "col-sm-5 col-xs-12">
-                    <p><a href="mailto:discountluggage123@gmail.com"> <i class="far fa-envelope"></i> Email</a></p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="thumbnail boxes">
+                  <span class="anchor" id="parking"></span>
+                  <h3><i class="fas fa-car"></i> Parking:</h3>
+                  <p>
+                    Meter parking is available in front of the store, as well as
+                    on Cherokee Ave south of Hollywood Blvd. Always double check
+                    the signs before parking! <br /><br />
+                    <i class="fas fa-dollar-sign"></i>
+                    <a
+                      href="https://www.yelp.com/search?cflt=parking&find_loc=Hollywood%2C+Los+Angeles%2C+CA"
+                      target="_blank"
+                    >
+                      Nearby parking structures are also available </a
+                    ><i class="fas fa-dollar-sign"></i>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </footer>
-      <script type="text/javascript">
 
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-          document.getElementById("googlebtn").href = "https://g.co/kgs/joaMuU";   //change url
-          document.getElementById("googlebtn").target = "_blank";     //change target
-      }//on mobile, load the reviews
+          <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail boxes">
+              <span class="anchor" id="location"></span>
+              <h3><i class="fas fa-map-marker-alt"></i> Location:</h3>
+              <p>
+                Conveniently located in the heart of Hollywood Blvd, between
+                Cherokee Ave and Schrader Blvd<br />
+                <br />
+                <a
+                  href="https://www.google.com/maps?ll=34.101396,-118.33445&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=9841494984010756839"
+                  >#C, 6630 Hollywood Blvd, Los Angeles, CA 90028</a
+                >
+              </p>
+              <p>Click on the map below for directions!</p>
+              <iframe
+                id="googlemap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7557967718085!2d-118.33664444952657!3d34.101395880497314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf3b55213763%3A0x8894038ba4bff2e7!2sDiscount+Luggage+of+Hollywood!5e0!3m2!1sen!2sus!4v1503540215421"
+              ></iframe>
+            </div>
+          </div>
+        </div>
 
-     if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || window.innerWidth < 576){
-        sr.reveal('.reviews', { 
+        <hr class="style1" />
+        <div class="reviews">
+          <h1>Yelp Reviews</h1>
+          <span class="anchor" id="reviews"></span>
+          <div class="yelp">
+            <iframe
+              data-review-id="_pUeizGHiFl0vAyiqEJf4g"
+              class="yelp-review"
+              src="https://www.yelp.com/embed/review/_pUeizGHiFl0vAyiqEJf4g?embed_location="
+              scrolling="no"
+              style="max-width: 700px; min-width: 320px; width: 100%; height: 240px; border: 0px;"
+            ></iframe>
+            <a
+              href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
+              target="_blank"
+              ><img src="./img/josh.png" alt="Josh's Review"
+            /></a>
+          </div>
+
+          <div class="yelp">
+            <iframe
+              data-review-id="tLP60KSvAO6YBKUSg03HSg"
+              class="yelp-review"
+              src="https://www.yelp.com/embed/review/tLP60KSvAO6YBKUSg03HSg?embed_location="
+              scrolling="no"
+              style="max-width: 700px; min-width: 320px; width: 100%; height: 260px; border: 0px;"
+            ></iframe>
+            <a
+              href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
+              target="_blank"
+              ><img src="./img/tiffany.png" alt="Tiffany's Review"
+            /></a>
+          </div>
+
+          <div class="yelp">
+            <iframe
+              data-review-id="NMzeCVT-tXS7OnyRER0gmA"
+              class="yelp-review"
+              src="https://www.yelp.com/embed/review/NMzeCVT-tXS7OnyRER0gmA?embed_location="
+              scrolling="no"
+              style="max-width: 700px; min-width: 320px; width: 100%; height: 339px; border: 0px;"
+            ></iframe>
+            <a
+              href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
+              target="_blank"
+              ><img src="./img/elise.png" alt="Elise's Review"
+            /></a>
+          </div>
+
+          <a
+            class="btn btn-danger btn-lg"
+            href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
+            target="_blank"
+          >
+            See More Yelp Reviews Here!</a
+          >
+          <br />
+
+          <a
+            id="googlebtn"
+            class="btn btn-primary btn-lg last"
+            href="https://www.google.com/search?ei=A_udWvTzKcLqjwSEoI_gCQ&q=discount+luggage+of+hollywood&oq=discount+luggage+of+hollywood&gs_l=psy-ab.3..0i71k1l8.0.0.0.12726.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.a8LxUrYCh-Q#lrd=0x80c2bf3b55213763:0x8894038ba4bff2e7,1,,,"
+            target="_blank"
+            >And Google Reviews Here!</a
+          >
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4 col-xs-12">
+            <p>
+              <a id="discountfooter" href="#about"
+                >Discount Luggage of Hollywood</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-4 col-sm-pull-4 col-xs-6">
+            <p>
+              Website by NikMash Creations<!-- <a id ="nikmash" href="#">NikMash</a> -->
+            </p>
+          </div>
+          <div class="col-sm-4 col-xs-6">
+            <div class="row">
+              <div class="col-sm-7 col-xs-12">
+                <p>
+                  <a href="tel:323-465-7827">
+                    <i class="fas fa-phone"></i> Call</a
+                  >
+                </p>
+              </div>
+              <div class="col-sm-5 col-xs-12">
+                <p>
+                  <a href="mailto:discountluggage123@gmail.com">
+                    <i class="far fa-envelope"></i> Email</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        document.getElementById('googlebtn').href = 'https://g.co/kgs/joaMuU'; //change url
+        document.getElementById('googlebtn').target = '_blank'; //change target
+      } //on mobile, load the reviews
+
+      if (
+        /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
+        window.innerWidth < 576
+      ) {
+        sr.reveal('.reviews', {
           duration: 1000,
           viewFactor: 0.04
         });
 
-        sr.reveal('.boxes', { 
+        sr.reveal('.boxes', {
           duration: 1000,
           viewFactor: 0.04
         });
-        sr.reveal('.jumbotron', { 
-          duration: 1000,
-          viewFactor: 0.04
-        });
-
-        sr.reveal('.btn', { 
+        sr.reveal('.jumbotron', {
           duration: 1000,
           viewFactor: 0.04
         });
 
-        sr.reveal('.yelp', { 
+        sr.reveal('.btn', {
+          duration: 1000,
+          viewFactor: 0.04
+        });
+
+        sr.reveal('.yelp', {
           duration: 1000,
           viewFactor: 0.04
         }); //this is for scroll animations
-        }
-        else{
-          sr.reveal('.reviews', { 
+      } else {
+        sr.reveal('.reviews', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 },
+          rotate: { x: 50, y: 0, z: 0 }
         });
 
-        sr.reveal('.boxes', { 
+        sr.reveal('.boxes', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 },
+          rotate: { x: 50, y: 0, z: 0 }
         });
-        sr.reveal('.jumbotron', { 
+        sr.reveal('.jumbotron', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 },
-        });
-
-        sr.reveal('.btn', { 
-          duration: 1000,
-          viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 },
+          rotate: { x: 50, y: 0, z: 0 }
         });
 
-        sr.reveal('.yelp', { 
+        sr.reveal('.btn', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 },
+          rotate: { x: 50, y: 0, z: 0 }
+        });
+
+        sr.reveal('.yelp', {
+          duration: 1000,
+          viewFactor: 0.04,
+          rotate: { x: 50, y: 0, z: 0 }
         }); //this is for scroll animations
-        }
-        
-        $(document).click(function (event) {
+      }
+
+      $(document).click(function(event) {
         var clickover = $(event.target);
-        var $navbar = $(".navbar-collapse");               
-        var _opened = $navbar.hasClass("in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
-            $navbar.collapse('hide');
+        var $navbar = $('.navbar-collapse');
+        var _opened = $navbar.hasClass('in');
+        if (_opened === true && !clickover.hasClass('navbar-toggle')) {
+          $navbar.collapse('hide');
         }
-        }); //this is so that clicking outside of navbar closes navbar/collapses WORKS ON COMPUTER
-
-      </script> 
-   </body>
+      }); //this is so that clicking outside of navbar closes navbar/collapses WORKS ON COMPUTER
+    </script>
+  </body>
 </html>
