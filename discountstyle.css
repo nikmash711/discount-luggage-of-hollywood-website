@@ -471,3 +471,9 @@ h3{
 .desc{
   text-align: center;
 }
+
+.special-luggage {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
