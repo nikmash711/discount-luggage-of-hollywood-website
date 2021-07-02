@@ -188,15 +188,7 @@
               >
             </p>
           </div>
-<!--           <div class="col-xs-12">
-            <h3 class="desc">
-              <strong
-                >LIMITED TIME SPECIAL: $59.99 Two-piece hardshell with TSA lock</strong
-              >
-            </h3>
-            <img class="special-luggage" src="./img/luggage.jpg" alt="luggage"/>
-          </div>
-        </div> -->
+        </div>
 
         <div class="row thumbnail boxes products2">
           <h3><i class="fas fa-briefcase"></i> Products:</h3>
@@ -244,15 +236,7 @@
               >
             </p>
           </div>
-<!--           <div class="col-xs-12">
-            <h3 class="desc">
-              <strong
-                >LIMITED TIME SPECIAL: $59.99 Two-piece hardshell with TSA lock</strong
-              >
-            </h3>
-            <img class="special-luggage" src="./img/luggage.jpg" alt="luggage"/>
-          </div>
-        </div> -->
+        </div>
         <div class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="row">
@@ -262,8 +246,8 @@
                   <h3><i class="far fa-clock"></i> Store Hours:</h3>
                   <h4>SPECIAL HOURS DUE TO COVID-19:</h4>
                   <p>
-                    <strong>Monday, JUNE 7</strong> CLOSED <br />
-                    <strong>Tuesday, JUNE 8</strong> CLOSED <br />
+                    <strong>Monday</strong> 12:00pm - 6:00pm <br />
+                    <strong>Tuesday</strong> 12:00pm - 6:00pm <br />
                     <strong>Wednesday</strong> 12:00pm - 6:00pm <br />
                     <strong>Thursday</strong> 12:00pm - 6:00pm <br />
                     <strong>Friday</strong> 12:00pm - 6:00pm <br />
@@ -332,7 +316,13 @@
               class="yelp-review"
               src="https://www.yelp.com/embed/review/_pUeizGHiFl0vAyiqEJf4g?embed_location="
               scrolling="no"
-              style="max-width: 700px; min-width: 320px; width: 100%; height: 240px; border: 0px;"
+              style="
+                max-width: 700px;
+                min-width: 320px;
+                width: 100%;
+                height: 240px;
+                border: 0px;
+              "
             ></iframe>
             <a
               href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
@@ -347,7 +337,13 @@
               class="yelp-review"
               src="https://www.yelp.com/embed/review/tLP60KSvAO6YBKUSg03HSg?embed_location="
               scrolling="no"
-              style="max-width: 700px; min-width: 320px; width: 100%; height: 260px; border: 0px;"
+              style="
+                max-width: 700px;
+                min-width: 320px;
+                width: 100%;
+                height: 260px;
+                border: 0px;
+              "
             ></iframe>
             <a
               href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
@@ -362,7 +358,13 @@
               class="yelp-review"
               src="https://www.yelp.com/embed/review/NMzeCVT-tXS7OnyRER0gmA?embed_location="
               scrolling="no"
-              style="max-width: 700px; min-width: 320px; width: 100%; height: 339px; border: 0px;"
+              style="
+                max-width: 700px;
+                min-width: 320px;
+                width: 100%;
+                height: 339px;
+                border: 0px;
+              "
             ></iframe>
             <a
               href="https://www.yelp.com/biz/discount-luggage-of-hollywood-los-angeles"
@@ -443,59 +445,59 @@
       ) {
         sr.reveal('.reviews', {
           duration: 1000,
-          viewFactor: 0.04
+          viewFactor: 0.04,
         });
 
         sr.reveal('.boxes', {
           duration: 1000,
-          viewFactor: 0.04
+          viewFactor: 0.04,
         });
         sr.reveal('.jumbotron', {
           duration: 1000,
-          viewFactor: 0.04
+          viewFactor: 0.04,
         });
 
         sr.reveal('.btn', {
           duration: 1000,
-          viewFactor: 0.04
+          viewFactor: 0.04,
         });
 
         sr.reveal('.yelp', {
           duration: 1000,
-          viewFactor: 0.04
+          viewFactor: 0.04,
         }); //this is for scroll animations
       } else {
         sr.reveal('.reviews', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 }
+          rotate: { x: 50, y: 0, z: 0 },
         });
 
         sr.reveal('.boxes', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 }
+          rotate: { x: 50, y: 0, z: 0 },
         });
         sr.reveal('.jumbotron', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 }
+          rotate: { x: 50, y: 0, z: 0 },
         });
 
         sr.reveal('.btn', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 }
+          rotate: { x: 50, y: 0, z: 0 },
         });
 
         sr.reveal('.yelp', {
           duration: 1000,
           viewFactor: 0.04,
-          rotate: { x: 50, y: 0, z: 0 }
+          rotate: { x: 50, y: 0, z: 0 },
         }); //this is for scroll animations
       }
 
-      $(document).click(function(event) {
+      $(document).click(function (event) {
         var clickover = $(event.target);
         var $navbar = $('.navbar-collapse');
         var _opened = $navbar.hasClass('in');
