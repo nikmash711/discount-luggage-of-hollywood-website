@@ -449,6 +449,7 @@ h3{
   text-align: left;
   margin-left: 4px;
   margin-right: 4px;
+  padding: 16px;
 }
 
 @media(min-width: 451px){
